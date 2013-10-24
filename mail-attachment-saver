@@ -28,7 +28,7 @@ except socket.error:
 
 numMessages = len(mbox.list()[1])
 if not numMessages:
-    print 'No messages found.'
+    print 'No messages found'
     exit()
 
 for i in range(numMessages):
@@ -49,6 +49,6 @@ for i in range(numMessages):
 
     shutil.move(f.name, args.filename)
     mbox.dele(i+1)
-    print 'An attachment was succesfully saved to file "%s"' % args.filename
+    print 'An attachment was successfully saved to file "%s"' % args.filename
 
 mbox.quit()
